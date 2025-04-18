@@ -109,7 +109,7 @@ To quantify the relationship between calories burned and sleep efficiency, we ca
 
 ### 📉 Visualization:
 
-<img src="img/scatter_correlation_plot.PNG" alt="Calories vs Sleep Efficiency Scatterplot" width="500"/>
+<img src="img/scatter_correlation_plot.png" alt="Calories vs Sleep Efficiency Scatterplot" width="500"/>
 
 ---
 
