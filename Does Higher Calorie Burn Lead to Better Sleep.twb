@@ -1,0 +1,2025 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='calories_sleep_merged' inline='true' name='federated.0qehitn1nowuqy1c8co2k15ctt52' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='calories_sleep_merged' name='textscan.17f8vds0pek9x715uezex111fyrj'>
+            <connection class='textscan' directory='D:/Portfolio' filename='calories_sleep_merged.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.17f8vds0pek9x715uezex111fyrj' name='calories_sleep_merged.csv' table='[calories_sleep_merged#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='date' name='SleepDay' ordinal='1' />
+            <column datatype='integer' name='TotalSleepRecords' ordinal='2' />
+            <column datatype='integer' name='TotalMinutesAsleep' ordinal='3' />
+            <column datatype='integer' name='TotalTimeInBed' ordinal='4' />
+            <column datatype='date' name='ActivityDate' ordinal='5' />
+            <column datatype='integer' name='TotalSteps' ordinal='6' />
+            <column datatype='real' name='TotalDistance' ordinal='7' />
+            <column datatype='real' name='TrackerDistance' ordinal='8' />
+            <column datatype='real' name='LoggedActivitiesDistance' ordinal='9' />
+            <column datatype='real' name='VeryActiveDistance' ordinal='10' />
+            <column datatype='real' name='ModeratelyActiveDistance' ordinal='11' />
+            <column datatype='real' name='LightActiveDistance' ordinal='12' />
+            <column datatype='real' name='SedentaryActiveDistance' ordinal='13' />
+            <column datatype='integer' name='VeryActiveMinutes' ordinal='14' />
+            <column datatype='integer' name='FairlyActiveMinutes' ordinal='15' />
+            <column datatype='integer' name='LightlyActiveMinutes' ordinal='16' />
+            <column datatype='integer' name='SedentaryMinutes' ordinal='17' />
+            <column datatype='integer' name='Calories' ordinal='18' />
+            <column datatype='real' name='SleepEfficiency' ordinal='19' />
+            <column datatype='string' name='CaloriesGroup' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_SG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SleepDay</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[SleepDay]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>SleepDay</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalSleepRecords</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalSleepRecords]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TotalSleepRecords</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalMinutesAsleep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalMinutesAsleep]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TotalMinutesAsleep</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTimeInBed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalTimeInBed]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TotalTimeInBed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ActivityDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ActivityDate]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>ActivityDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalSteps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalSteps]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TotalSteps</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TotalDistance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrackerDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TrackerDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>TrackerDistance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoggedActivitiesDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LoggedActivitiesDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>LoggedActivitiesDistance</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VeryActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VeryActiveDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>VeryActiveDistance</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ModeratelyActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ModeratelyActiveDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>ModeratelyActiveDistance</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LightActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LightActiveDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>LightActiveDistance</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SedentaryActiveDistance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SedentaryActiveDistance]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>SedentaryActiveDistance</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VeryActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VeryActiveMinutes]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>VeryActiveMinutes</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FairlyActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FairlyActiveMinutes]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>FairlyActiveMinutes</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LightlyActiveMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LightlyActiveMinutes]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>LightlyActiveMinutes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SedentaryMinutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SedentaryMinutes]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>SedentaryMinutes</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Calories]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>Calories</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SleepEfficiency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SleepEfficiency]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>SleepEfficiency</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaloriesGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CaloriesGroup]</local-name>
+            <parent-name>[calories_sleep_merged.csv]</parent-name>
+            <remote-alias>CaloriesGroup</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Activity Date' datatype='date' name='[ActivityDate]' role='dimension' type='ordinal' />
+      <column caption='Calories Group' datatype='string' name='[CaloriesGroup]' role='dimension' type='nominal' />
+      <column caption='Fairly Active Minutes' datatype='integer' name='[FairlyActiveMinutes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Light Active Distance' datatype='real' name='[LightActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Lightly Active Minutes' datatype='integer' name='[LightlyActiveMinutes]' role='measure' type='quantitative' />
+      <column caption='Logged Activities Distance' datatype='real' name='[LoggedActivitiesDistance]' role='measure' type='quantitative' />
+      <column caption='Moderately Active Distance' datatype='real' name='[ModeratelyActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Sedentary Active Distance' datatype='real' name='[SedentaryActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Sedentary Minutes' datatype='integer' name='[SedentaryMinutes]' role='measure' type='quantitative' />
+      <column caption='Sleep Day' datatype='date' name='[SleepDay]' role='dimension' type='ordinal' />
+      <column caption='Sleep Efficiency' datatype='real' name='[SleepEfficiency]' role='measure' type='quantitative' />
+      <column caption='Total Distance' datatype='real' name='[TotalDistance]' role='measure' type='quantitative' />
+      <column caption='Total Minutes Asleep' datatype='integer' name='[TotalMinutesAsleep]' role='measure' type='quantitative' />
+      <column caption='Total Sleep Records' datatype='integer' name='[TotalSleepRecords]' role='measure' type='quantitative' />
+      <column caption='Total Steps' datatype='integer' name='[TotalSteps]' role='measure' type='quantitative' />
+      <column caption='Total Time In Bed' datatype='integer' name='[TotalTimeInBed]' role='measure' type='quantitative' />
+      <column caption='Tracker Distance' datatype='real' name='[TrackerDistance]' role='measure' type='quantitative' />
+      <column caption='Very Active Distance' datatype='real' name='[VeryActiveDistance]' role='measure' type='quantitative' />
+      <column caption='Very Active Minutes' datatype='integer' name='[VeryActiveMinutes]' role='measure' type='quantitative' />
+      <column caption='calories_sleep_merged.csv' datatype='table' name='[__tableau_internal_object_id__].[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]' role='measure' type='quantitative' />
+      <column-instance column='[CaloriesGroup]' derivation='None' name='[none:CaloriesGroup:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='zh_CN' class='hyper' dbname='C:/Users/ADMINI~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0hpo611013f513110l7xo0ssy5f8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/17/2025 12:34:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SleepDay</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[SleepDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SleepDay</remote-alias>
+              <ordinal>1</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalSleepRecords</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalSleepRecords]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalSleepRecords</remote-alias>
+              <ordinal>2</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalMinutesAsleep</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalMinutesAsleep]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalMinutesAsleep</remote-alias>
+              <ordinal>3</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalTimeInBed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalTimeInBed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalTimeInBed</remote-alias>
+              <ordinal>4</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>242</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ActivityDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ActivityDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ActivityDate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalSteps</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalSteps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalSteps</remote-alias>
+              <ordinal>6</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>409</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalDistance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>343</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrackerDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TrackerDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrackerDistance</remote-alias>
+              <ordinal>8</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>341</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoggedActivitiesDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LoggedActivitiesDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoggedActivitiesDistance</remote-alias>
+              <ordinal>9</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VeryActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[VeryActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VeryActiveDistance</remote-alias>
+              <ordinal>10</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ModeratelyActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ModeratelyActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ModeratelyActiveDistance</remote-alias>
+              <ordinal>11</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LightActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LightActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LightActiveDistance</remote-alias>
+              <ordinal>12</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>299</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SedentaryActiveDistance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SedentaryActiveDistance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SedentaryActiveDistance</remote-alias>
+              <ordinal>13</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VeryActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[VeryActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VeryActiveMinutes</remote-alias>
+              <ordinal>14</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FairlyActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FairlyActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FairlyActiveMinutes</remote-alias>
+              <ordinal>15</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LightlyActiveMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LightlyActiveMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LightlyActiveMinutes</remote-alias>
+              <ordinal>16</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SedentaryMinutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SedentaryMinutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SedentaryMinutes</remote-alias>
+              <ordinal>17</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>277</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calories</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Calories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calories</remote-alias>
+              <ordinal>18</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>370</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SleepEfficiency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SleepEfficiency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SleepEfficiency</remote-alias>
+              <ordinal>19</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>405</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CaloriesGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CaloriesGroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaloriesGroup</remote-alias>
+              <ordinal>20</ordinal>
+              <family>calories_sleep_merged.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:CaloriesGroup:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='calories_sleep_merged.csv' id='calories_sleep_merged.csv_ED96545F872748A68B0955B89B0A0C67'>
+            <properties context=''>
+              <relation connection='textscan.17f8vds0pek9x715uezex111fyrj' name='calories_sleep_merged.csv' table='[calories_sleep_merged#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='date' name='SleepDay' ordinal='1' />
+                  <column datatype='integer' name='TotalSleepRecords' ordinal='2' />
+                  <column datatype='integer' name='TotalMinutesAsleep' ordinal='3' />
+                  <column datatype='integer' name='TotalTimeInBed' ordinal='4' />
+                  <column datatype='date' name='ActivityDate' ordinal='5' />
+                  <column datatype='integer' name='TotalSteps' ordinal='6' />
+                  <column datatype='real' name='TotalDistance' ordinal='7' />
+                  <column datatype='real' name='TrackerDistance' ordinal='8' />
+                  <column datatype='real' name='LoggedActivitiesDistance' ordinal='9' />
+                  <column datatype='real' name='VeryActiveDistance' ordinal='10' />
+                  <column datatype='real' name='ModeratelyActiveDistance' ordinal='11' />
+                  <column datatype='real' name='LightActiveDistance' ordinal='12' />
+                  <column datatype='real' name='SedentaryActiveDistance' ordinal='13' />
+                  <column datatype='integer' name='VeryActiveMinutes' ordinal='14' />
+                  <column datatype='integer' name='FairlyActiveMinutes' ordinal='15' />
+                  <column datatype='integer' name='LightlyActiveMinutes' ordinal='16' />
+                  <column datatype='integer' name='SedentaryMinutes' ordinal='17' />
+                  <column datatype='integer' name='Calories' ordinal='18' />
+                  <column datatype='real' name='SleepEfficiency' ordinal='19' />
+                  <column datatype='string' name='CaloriesGroup' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Sleep Efficiency Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='calories_sleep_merged' name='federated.0qehitn1nowuqy1c8co2k15ctt52' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qehitn1nowuqy1c8co2k15ctt52'>
+            <column caption='Calories Group' datatype='string' name='[CaloriesGroup]' role='dimension' type='nominal' />
+            <column caption='Sleep Efficiency' datatype='real' name='[SleepEfficiency]' role='measure' type='quantitative' />
+            <column-instance column='[SleepEfficiency]' derivation='Avg' name='[avg:SleepEfficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CaloriesGroup]' derivation='None' name='[none:CaloriesGroup:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]'>
+            <groupfilter function='level-members' level='[none:CaloriesGroup:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0qehitn1nowuqy1c8co2k15ctt52].[avg:SleepEfficiency:qk]</rows>
+        <cols>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</cols>
+      </table>
+      <simple-id uuid='{A84DB521-D31B-4882-92E5-42436D06BA1C}' />
+    </worksheet>
+    <worksheet name='Average Sleep Efficiency by Calorie Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sleep Efficiency by Calorie Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='calories_sleep_merged' name='federated.0qehitn1nowuqy1c8co2k15ctt52' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qehitn1nowuqy1c8co2k15ctt52'>
+            <column caption='Calories Group' datatype='string' name='[CaloriesGroup]' role='dimension' type='nominal' />
+            <column caption='Sleep Efficiency' datatype='real' name='[SleepEfficiency]' role='measure' type='quantitative' />
+            <column-instance column='[SleepEfficiency]' derivation='Avg' name='[avg:SleepEfficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CaloriesGroup]' derivation='None' name='[none:CaloriesGroup:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0qehitn1nowuqy1c8co2k15ctt52].[avg:SleepEfficiency:qk]' value='p0.00%' />
+            <format attr='font-weight' field='[federated.0qehitn1nowuqy1c8co2k15ctt52].[avg:SleepEfficiency:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0qehitn1nowuqy1c8co2k15ctt52].[avg:SleepEfficiency:qk]' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[avg:SleepEfficiency:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6063F393-5538-4611-8033-88EBE295DA86}' />
+    </worksheet>
+    <worksheet name='Distribution of Sleep Efficiency by Calorie Group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='calories_sleep_merged' name='federated.0qehitn1nowuqy1c8co2k15ctt52' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qehitn1nowuqy1c8co2k15ctt52'>
+            <column caption='Calories Group' datatype='string' name='[CaloriesGroup]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Sleep Efficiency' datatype='real' name='[SleepEfficiency]' role='measure' type='quantitative' />
+            <column-instance column='[CaloriesGroup]' derivation='None' name='[none:CaloriesGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SleepEfficiency]' derivation='None' name='[none:SleepEfficiency:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]'>
+            <groupfilter function='level-members' level='[none:CaloriesGroup:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='3' />
+            <format attr='palette' id='refline0' value='bp_gray60' />
+            <format attr='whisker-stroke-size' id='refline0' value='3' />
+            <format attr='opacity' id='refline0' value='167' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' />
+              <lod column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Id:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]</rows>
+        <cols>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</cols>
+      </table>
+      <simple-id uuid='{D2591F5A-7933-44FF-AEAD-064F6DE77FF5}' />
+    </worksheet>
+    <worksheet name='Relationship Between Calories Burned and Sleep Efficiency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='calories_sleep_merged' name='federated.0qehitn1nowuqy1c8co2k15ctt52' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qehitn1nowuqy1c8co2k15ctt52'>
+            <column caption='Calories Group' datatype='string' name='[CaloriesGroup]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Calories]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+            <column caption='Sleep Efficiency' datatype='real' name='[SleepEfficiency]' role='measure' type='quantitative' />
+            <column-instance column='[Calories]' derivation='None' name='[none:Calories:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CaloriesGroup]' derivation='None' name='[none:CaloriesGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Id]' derivation='None' name='[none:Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SleepEfficiency]' derivation='None' name='[none:SleepEfficiency:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]'>
+            <groupfilter function='level-members' level='[none:CaloriesGroup:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Calories:qk]' scope='rows' value='Daily Calories Burn' />
+            <format attr='title' class='0' field='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]' scope='cols' value='Sleep Efficiency %' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' />
+              <lod column='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Calories:qk]</rows>
+        <cols>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]</cols>
+      </table>
+      <simple-id uuid='{73C50B9E-4670-4E59-AD64-B154527F8FCE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Does Burning More Calories Improve Sleep Efficiency?'>
+      <style />
+      <size maxheight='800' maxwidth='960' minheight='800' minwidth='960' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='24499' id='8' param='horz' type-v2='layout-flow' w='98334' x='833' y='1000'>
+            <zone h='24499' id='6' type-v2='layout-basic' w='98334' x='833' y='1000'>
+              <zone h='24499' id='3' name='Average Sleep Efficiency by Calorie Group' w='98334' x='833' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='32376' id='11' name='Distribution of Sleep Efficiency by Calorie Group' w='49167' x='833' y='66624'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32376' id='12' name='Relationship Between Calories Burned and Sleep Efficiency' w='49167' x='50000' y='66624'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32749' id='5' name='Average Sleep Efficiency Bar Chart' w='49167' x='833' y='29499'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4000' id='14' type-v2='empty' w='98334' x='833' y='25499'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4376' id='15' type-v2='empty' w='98334' x='833' y='62248'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='32749' id='10' type-v2='text' w='49167' x='50000' y='29499'>
+            <formatted-text>
+              <run> Insight:
+- Users who burned more calories tend to have higher sleep efficiency.
+- Average Sleep Efficiency:
+  • High Calorie Group: </run>
+              <run bold='true'>94.05%</run>
+              <run>&#10;  • Low Calorie Group: </run>
+              <run bold='true'>89.22%</run>
+              <run>
+- The correlation between daily calories burned and sleep efficiency is weak positive (</run>
+              <run bold='true'>r = 0.297</run>
+              <run>).</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98334' x='833' y='1000'>
+                <zone fixed-size='188' h='24499' id='3' is-fixed='true' name='Average Sleep Efficiency by Calorie Group' w='98334' x='833' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32749' id='5' is-fixed='true' name='Average Sleep Efficiency Bar Chart' w='49167' x='833' y='29499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='32749' id='10' type-v2='text' w='49167' x='50000' y='29499'>
+                  <formatted-text>
+                    <run> Insight:
+- Users who burned more calories tend to have higher sleep efficiency.
+- Average Sleep Efficiency:
+  • High Calorie Group: </run>
+                    <run bold='true'>94.05%</run>
+                    <run>&#10;  • Low Calorie Group: </run>
+                    <run bold='true'>89.22%</run>
+                    <run>
+- The correlation between daily calories burned and sleep efficiency is weak positive (</run>
+                    <run bold='true'>r = 0.297</run>
+                    <run>).</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='32376' id='11' is-fixed='true' name='Distribution of Sleep Efficiency by Calorie Group' w='49167' x='833' y='66624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='32376' id='12' is-fixed='true' name='Relationship Between Calories Burned and Sleep Efficiency' w='49167' x='50000' y='66624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DA158B15-6499-43B5-8F22-74CA6417D2F4}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Does Burning More Calories Improve Sleep Efficiency?'>
+      <viewpoints>
+        <viewpoint name='Average Sleep Efficiency Bar Chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Sleep Efficiency by Calorie Group'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Distribution of Sleep Efficiency by Calorie Group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Relationship Between Calories Burned and Sleep Efficiency'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{1862F6FC-B104-4F35-B0CB-E074E2BB257F}' />
+    </window>
+    <window class='worksheet' name='Average Sleep Efficiency by Calorie Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1E92965D-46AF-4FBC-9DCC-062A5CD08D90}' />
+    </window>
+    <window class='worksheet' name='Distribution of Sleep Efficiency by Calorie Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</field>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Id:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F27850F9-768C-44BE-843C-BB8582E5F06E}' />
+    </window>
+    <window class='worksheet' name='Relationship Between Calories Burned and Sleep Efficiency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Calories:qk]</field>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</field>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:Id:ok]</field>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:SleepEfficiency:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F6F8F35-8629-4801-AE43-3F13C3701A4F}' />
+    </window>
+    <window class='worksheet' name='Average Sleep Efficiency Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qehitn1nowuqy1c8co2k15ctt52].[none:CaloriesGroup:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{04B7CB6B-5993-4D34-AEE9-2FC3B1015806}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Sleep Efficiency Bar Chart' width='188'>
+      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
+      BS9GUfBilP8HgxD2ecTYlu4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='114' name='Average Sleep Efficiency by Calorie Group' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAByCAYAAAAF3t55AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAV20lEQVR4nO2de1hU1frHP+cH4yEMjooiXlK8ImqYgilehpBCk9RUjIxCw5SOpl3kpIZ3
+      M1IwJS9HFPFSSFhUhOLRHgrxdlDwgoogqGCieCF6xsQC5vD7Y67gMMNNgfb6PA/Pw55Z691r
+      zbzfvd53rTV7/628vLwcgUCi/F9DN0AgaEiEAASSRghAIGmEAASSRghAIGmEAASSRghAIGmE
+      AASSRghAIGmEAASSRghAIGmEAASSRghAIGmEAASSRghAIGmEAASSRghAIGmEAASSRghAIGmE
+      AASSRghAIGmEAASSRghAIGmEAASSRghAIGmEAASSRghAIGnMTRVITU19HO0QCBqEv4mb4wqk
+      jAiBBJJGCEAgaYQABJJGCEAgaYQABJJGCEAgaYQABJJGCEAgaYQABJJGCEAgaYQABJLG5GY4
+      QeOk7NdM9u+J4LuEdLJv/MoDAJkVbR2dGTP+LV55sRet6vLtKhKYO3Ixh0orvuwwO5aoKZ3r
+      YFiPkl84HP0F0fuTOJdT+z6khYwgIEZRgxM7MDs2iimdhQCaIArSdy7mo81HKKjknJTe41Z6
+      EhHpSURscGV2yEqmOFnX4hz3SV4T+pDz1yeKE2sJmBtF9oNKb+j1YWe4J4u2Lmd0O2Nuep9b
+      BTVx/oqIEKhJoSB5xWsErDfg/JUpPM76gGmEnKi5c5SlbWLlvto7VXWYNNOA81eitOAgi18J
+      IOpKmZFSeVy9VPt2iBGgCaFIWMa8uAI0vv9Ej4l8GDQVj17tsDQvo7gol7Q9YXy89TiFAKVX
+      iVm0hkFfL0Ne3YGg7Aq7PotR1ceakavX0XObP+uz6rMjP6ntA7IujPtoCW959KKdpTklihxS
+      IoP56MuzqpDowVk2LIth2E5fDAZeZQXcuKk56MbMPTH4d61+U+o0AuTt9MXFZQnJD7+Br4sL
+      S7RvJLPExQWXJQ+VNGadnb41rfMXpiyN8LBDWue38VpN3BcLGNO3HZbmAOZYtuzO8ID1fP2Z
+      FzaaeoX7WPdFBsauofrcigthq9rZZW6BzBvxj/rsBQCXojeo/3Ngxs4oFo3pSztVJ2hm3Z3h
+      74UTt8QNmbpU6YUNbDxw37Cxa7nkaA+6Y9+pZm0RIVBT4exP7NdcNmVuvDt3RJUJorV8EWvf
+      1HnCtS9jOFYdBSgSWB16UiUy2UACPxxNbTIIo5Sd4NuYawB0ejMI/57NDBQyp9WYDwkcqJUA
+      P329l1uG7F3P47Lm/3btsathTPOYBCBnWWoqqcvkj+d0f0HyM8+jjcqHeOBm1DPN6e3twzOa
+      w9KDJJpUwH2OhYVpE1+H6f9iXNs6NLgqzh7ioALgGXy8exuJwdsybrKndhTgTBJHCh8ulXdV
+      d/2nZxfDYZIRHpMADIUzCtJjFvOGuysuLi4Mf3kma9d+yMjKIU/Zfa7+GIy/53B1ucUcuP14
+      Wt2YKCvTc+Ann6S5qQptn+fFgZqDUk6dM54plqVtYlmc2sM6vUmQX9dHkiBeOZuqEnK3IQw0
+      ITDzIW6M0B6dJP3Cw2XyruiSE2u7tqY/l0o0WAiUFzWbgHV5DA6J41hqKj/vnsnf/6uXHGlI
+      TeCgxSTW7T1M6rGtjFcmsGpnWkM0ufFQVlaNmN4Gx77ttEc3bxRUXadC4muDT1AAvR/R9Mj1
+      PHXA0qs7JnNV8270dNAd5lzNq1Qgn19ydUcOXe1r3J566OY+PnDZZ/Cd7lXWSWPPtgu0m7qb
+      WS62qpcsrWhuqDWDJxEwXGOpFTbWoPi9ioToL0zrNnaA+mp3/ASnykbwrIlvr3OXnoB6iiT3
+      F/LBYIign/haj5xHgPOjmhzMQxOxOHStTrDSgafs0Xb7yrXKPcjjit7AdjJ4JC7B+vWfoFX7
+      lnTs6Y7bqBd4Ud4X20opRz2MAF58lppKqv5f7GwcjFXJO88ZBTzt2LPup5cIzQcNQRvRKL5h
+      0YpkTM3UN3/ySdOGKyS+bgTOG1H/iW+tMcdcT4ulZZXGsMKb3DC6HvKAX2/cID0pivXzpzLa
+      42UCYy5RoldCzAI1FWxGMdlL55qF+z7Aa3Iw8eevo9B+oyUo7l7n/NE9bA70xzPI8MisQz/x
+      ldHnnTmMbjzeb5p/9GdwH5npchoeXCcpZAoT9C4eDbMQ1roNdkD+zVvAo5hq+CvSHPncpXj9
+      9wP2qROlB9mxLJsaW2uLZRk7CNUkvg7TWeJTT3t8HhfmXZmy8zhTqni7RHGX29fOkLhnGxEJ
+      2aqFNUopiFvKGrd4lsmbN9AI0NyNcV7WnIlcQ/wvJUAJt1MT+e9NkzWljbWcRdGf49vjiWoU
+      fgI7O73LuV0bWld4P4+oldtRz8jzZpAfXRvdvoAy9KMemXnNGtjMujUd+z7PlOXRJO6eiW6w
+      ULAv+j8U0mAhUHPkQZv519OXWD1+CC7DX2H1hZb0aNMwrWlKmLcawvvRiXy3djYTnu1OKz0t
+      PNGqPd2fHcVbS3YQn/wzn0/QfaCVpwhvxX7KZnVyaTMukKmPatqnAp3pop7PyLpSeUbHEBVn
+      ebp26lDrMzfr6c/q957RvXAynQs0qlsjXiHS5xW+k+8iflbvhm7MX4D7JMx1Y/Eh1ZHb8kOs
+      Ga2WwP1kloz5gDrvd/P6rMaLm1cifXhl02XoNpM9Mf7Gp0LvJzDXbTGHtKdLpU5rqRkbGeO3
+      XT0v1of343Y21AiQz9714RzOUagy8rJirsZvJuZyJ156QTh/vXBrL99qPIeBDBmkd/2/e5Wc
+      R7vZs0q69nNRzTJdPsZJg3sbdJSlpXBMezQQpz712ZLWtGzRYCFQC/p0KyZ6oTceLi64DPbA
+      f+fvjP88gmliZrQeUJC8KZIz6iPZiJcZZWO0wuOj3yCGywDOEPONsU16t4iLPqjd/MczzzGs
+      Uh8Uipqp+NLhRLRpprUdbZsD5YKmw61r5df+NFXoz/KsbX7lg52dy52dncudnceXb7hQWoeT
+      5pbveE1jy7n8tR25dbBVXl5eXlqeutpTbe+18vAsQx0qLb+8Q78Pg8v/9Z/fHyp1aPGw8nFz
+      N5cnm/5Qyv/M2lbuN1jXD/fglPLS8vJysQ7QlMiMYLybO28EbmbP0fNcLyrWXUFLFOSk7iF4
+      sgevbbqg2zbtE0TAY0lwNdvjXbR/hneym+McME/9fxZbpviyIv48N4tVPSlR5PBj8BtMWa/r
+      g6zP27ztYWiXzwOuJ23l/fFuuL8RyOY9qeTcLaJY96GguH6e+ODJeLy2iQtagwOZ9eazmCN+
+      ENP0KL3HxaQILiZFmCxq47qAf7/v3Pi+ZOsR2ID2Rztxy6YSt6yKsk/0450lviamaEu5dzGJ
+      iItJRKw2dXIbvFatYqJ6+UmMAE2Jv1tQnRUAeIJ+07cSvXZiI5zbV/F15HT6meiMzM6T5XvC
+      8a2iE/Kg71g7/Tk6Vu9DQWY3jNmRX7NM7+dxjfTjERhk0AJ+Tp5KZmIcX+1PIj0nnxu/qn9Y
+      K7OibWdHhr44gQljnqNXnW4J8eixdgpgW+Lout0VotlTDA8IZfi0Yq6e2cuB75NISs8hX3OX
+      DFRrIz2c3HEb9zKTXLuofz2noxGtAwgEjx8RAgkkjRCAQNIIAQgkjRCAQNIIAQgkjRCAQNII
+      AQgkjRCAQNKYXC4sLi5+HO0QCBoEMQIIJI0QgEDSCAEIJI0QgEDSCAEIJI0QgEDSCAEIJI0Q
+      gEDSCAEIJI0QgEDSCAEIJE3jvnWAoEqUxXmkfBfP3iOHuXD5JkV/qF6XWbXhKYd+DH/em7HP
+      96aNoaeQGqAk/xhfR3/Dj8ez+OXOPdVNqSxa0rXvcF7wnsykIR2opqlqU3Ing6MHE4j/8SSX
+      b1TugysveE9i/KDOWJpVyxp3Mo5yMCGeH09e5sbNIlTmZFi1eQoH1xfwnjSeQZ0t0Tdn8q4Q
+      YjNcY0PB+aiVLI08zm2jjwcCLLoxNiiY993sqNKHlAUcWruAlT9cVjuMYWSdvVgcEoibXbW8
+      0SSh073Yn3UPU12Q2boyJ/QTxtlXdd4S8n/6nKVr9pN1z6Q1bF3nEPrJODTmhACaFAqOrvRj
+      wYFfa1BHhmPANjb52j8sAmUuMXNmsPGcMdfXo9WzzF23yogzVodiTofP4t2oy6aLapA5Mmt7
+      OD6VnwJffJrwWfOIulzN9mvNzWJ7uA+dECFQk6I4MYTFes4vs3XFd9YURrp0p4NVM0BJ8W95
+      nNm3m607D6Lyi1Iuhq/gq+Hb8K3gQEoyt32k5/wybF19+SBgEi5drWhGCffyczj8ZTBr9uWp
+      rtS/nuDz4K/ot8mX2mvgLhknNM5vQTfPKfhNeI7+9na0sDQDzXmjQ1inGZVKL7JlayJjVnhg
+      WcFUBif0nd+iG55T/JjwXH/s7VqoQqeSe+TnHCY6ZB0/qMuWXtzC1sQxrPCwrFsSfC1qGnL5
+      So7WxYigmhRzJPGQ7oaxjgFsi1mFv3tvtfMDmGHZoitDfBcSEbMUD+0dALOJ+09mRXO397I5
+      5rrGGo5vhbN7lT9DulqpY/1mWHXozeh5O9gW4Kh9YnvpxUi2JNb94QK2rgFsiNvP9oW+uPfu
+      oHZ+vfMGRrDlrR7a8qWH4vnRwJPiVc23xTVgA3H7t7PQ153eHVro8oZmVnToPZrAiC3ozJVy
+      KP7HhnxEkqDm3OWO3gMl5K+9avQqbNZyBD5j7bTHBXcqek/h8Z85pVFTRx/e9+1eRZJrhr1v
+      CPOGaSXAkZh49bPFaknLZ4lZ5YtTS2PDiBn23j4M0x7fw9DjoVs+G8CGb2JY5euEcXP2ePvo
+      rHHvd+4jBNCEaM6TVrqjP//8s0a1rZ+sEDyQnXlO+7/dc3J6GQ1prPGY6KV7fnD2TxyutQI6
+      8Oqq0KqTcn0sm+s916wM5f8qm3qVVaGmhKRvTu8W62VK/scjFkBJ/k+E/nMcnnI5cg8vpn+c
+      QI7mmbaZW3hF/hJhp3Xlc3dNQS6X89FBXeJdfPAj5PKPOCj5XNwGV/cB2lDkSMwOzhuJRJS5
+      UayNKVAfdWTsSKeK75fpZkysmlcUhyHMnN15QS+kupBZ2y/EDLNq5g/KtBSOa486YGdb2ZRZ
+      9YSkskZais4aHeyw5VEK4HYcH/qtJLv/CmJ+Tubn+M8Y/ssaAmbHqIbPXgMZaq3g1LlcdYVi
+      LmUW4uExmJTT6Voz6adTYMAgnE1/R395bMctZ/nIVqqD7K+Y6TeTjQkZ5N/TXFWUFP92hWOR
+      8/CZFs5F9QOwHQM+YZqRS3zZQ5dWQzjgqKeh/ILbtexFNVEc5dMV32sfaC1z82BYHXxAcfRT
+      VnyvtYabxzAseYQCOB29lVNtfQmcoYrNzCwd8Avyx/7iF3x3GsAJF1cZV0+dVT0ogXROpzjh
+      6tMP+7R0VClbJulppfQY2J/G8oirhsWaofO3E+LTDQuAX88T8+nbTPZ6HrlcjlzuzqixU5m/
+      Q71GYNGBkQujDE6B2rTR5QdXT6Rh2p0t6WSvV+eX/HrpkSFKcmIJ9FuAdsJL5siM6ZVmgKpv
+      jZzYQPwWHEBnbgbTPVTWHpEAbnApQwF9HOih/3Ine7qiID3jGmBG/4GD4Nx5MpVAZjpp3fvR
+      t1dvnIozyCoECrPIKLBjkHPlCWAJY9aSQbO2szd6IR5GnqvcvNfrhMVGE+RpeBGs18Chupg+
+      fROLonJRmji1ZXMrEyXqiLKI9MhZvOQfxgmtt9ritTzk4TWAaplLJ3LWS/iHndA5v60Xy0NU
+      awDQwEmwpfMgBpSe5UI2FGZlgHM/2uPEMwPPcT5TifL8GU5ZD2Vgr4ZsZSNDWUTKxjd5afLH
+      JN6putj9zC95d+JkgmJzKDFUoP94JutNC14Mn4bPvEiOXfmNYo0SlMX8VniF0/ujCP3gdf4Z
+      mV2vXdGnJD+BZT7evLPjnG5F2uJppoZFMm+otbGqhqyRn7AMH+932KG3yGfx9FTCIuehb+4R
+      LYS1p2dva0jJIpuhulEgO4sLWDOot1p/Nv0Y0GUNR89ewyHzHP2e7wGY0feZp9l4IZv0ByeR
+      uS7AqYqzSI7KK7cW3Rj79hwmjHCgcwtLzDSLSN//m8hvz3L7j3wOhwUw7fpqNr7rTEU36sSr
+      iwJI1uYKpdw+voP5x3c85j4Vkb5zIYH6jo8MW1d/lgb50reGvq8sSmfnwsAKjo/MFlf/pQT5
+      9qWyuUc2AvSfPJ0Bt6II3ZJOkRKUxVnsCo3iluMbjO+vKWXP0wOsuZi2naSTT9NXnajZOPSG
+      lBh+OKVg0MD+Ncj0/8ooOb3hPZ3ztxpJ8DfbCZzQn64tNBu81ItIs9azO/wtHGUApeTFfsin
+      Bx+eMjKz92V9+Lu42soeeu8hZFbYttJF4XZt6p6VKYtSCJta+arfjbFLd7F7VU2dX0lRShhT
+      K1/1u41l6a7drDLg/FAvI8ABFsgP6B2PJDg5iKG241i9y4rPP16Ej3sRf8iscHCfS/iHo9EP
+      55xcXJHFHiCxy1tM0XymvZxwzv2SfaUDmCumf1QU7mVnrCaSteblRfMxFhk06+7Hipkn8A5L
+      B0o5suMbsj39K+ZkQLPuE1kVM4JLB75lR3wCZy/d4Z569siqTWs6OQxn2EujGevSmVPB7ixK
+      VNVr39ZIAlINlLkxzJmxEZ2vqq76i+e/Wu15fT1r5MbMYcZGPSHJbHH1X8z8V40vkInNcE2F
+      oyuRL9BcaNQXGVN1rkUx7fVwVJG7I7O+CsenfW0bkMmWV2bwZQGAHa9v2cOMOuRmszzlOueX
+      dcZrcQiBxnatVsnDzl+TnatiM5xkKKOszHSpqlCmJfCDZl2trhMTylyd87dyY+HmpXjWcpu1
+      MjeKFXrO38ptIZuXelJdc2IrRFPB8km9GPYsZ8+bmrSE2yePo5u3aUub1rU8tzKXr7bs0y5K
+      dZwwmv5GK5ho1/ehqn9kjgSsq73zw22+D43Q9lHmGMC6Gjg/CAE0HZyGMUKrgAJi128zsRUi
+      lk+261bUcXLmmUrpVHFBPkWmdKQs4tCn7xF+Ub11QjaMqd6VM4macJpodbs6+gbiW5ffFpyO
+      RtfFjvgG1nybthBAU8HMGe839Lclf2liK0QYp7QCaYXX6y9SeSvN3cTFjHtxMh+ERrH/9BUK
+      7+lWDJTFt8j4OZJ5Pt4s0i3JMmDOe3hWkXyrtsfLtX8rDe2TzzzJUQVAF0aNqIuQIPPkUe2o
+      RJdR1MacyAGaEJ18Qlieo/eLMPVWiJhPjdWS4RiwjsDBVcym/ZFP6g/hpP4QbuLsMjpPXM3y
+      cZVlVDMKszJQpRJXifCTE1GDuiODkwnSZv6FZGUU6N68GoGfvEbWCE4OEiNA08KaoUG72BTg
+      SnWm7rHoxtgVhvcCAZhbWFAdM8hs8Zi/i20PLabVnPu/36ujBa0l6sOUGAGaHNb09V1FzPg8
+      Ur77mm8M3FGhdScHPMe8bvKuEO0nbmS/5xVSf0hg75HDZF27yx3ND8stWtKuWx88X5jEqJf6
+      06G+bwnRSBDrAAJJI0IggaQRAhBIGiEAgaQRAhBIGiEAgaT5f+dnNp3GluD1AAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Distribution of Sleep Efficiency by Calorie Group' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Does Burning More Calories Improve Sleep Efficiency?' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Relationship Between Calories Burned and Sleep Efficiency' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2deWxk2XWfv7fVXkVWcV+6yV7YG3uZRaOZ0SzKyLZmJEgaOYYRW0YSIFHk
+      IAiSPxLA1hJbghMglmEEgQ1YcQIbhmE5liVFkWxomZFkyZJnoll7mr2wuO9VXKvI2t9y80ct
+      LLKL3SwOyW523Q/NZvHVqfNunXd/99733rnvKkIIgUTSoKj3ugASyb3kwAVg2/Zt24QQOI7z
+      rnw8qPaHEZt6Ov2jHBshxF3935MeQAhR10God5R2lO1lbO5su9/+5RBI0tBIAUgamroFkFyO
+      ce3aNdY2ssRmJ5mNLWObOYZv3SKdt0gsLzA2OYu8tiQ5Cuj1fmBqZoZgSzd+l8VCykE1Fxhf
+      1+g81sfEWBRhQ2vQYHkjR1vIcxBllkj2jboFcH7wMpmNRW4MTxEMtuHCJOmA1+fFUG1QA/i8
+      LjKWiW0bNa86lE9mdntCcz9diTho+4OOjeM4CCFQFOVA/N9PsdmN/7oFsBSbY3FljfbeU6zO
+      j7Ou+jjV1cTQ22/T2tlHITHP2LzD4KUuNK04wtI0bYuP8kHYvv2OBdXrK+pRtT/o2FiWhaZp
+      uxZAvf4P0r7e2JSFcif/ykHfCbZt+10LwLKsug/yUbU/jNjUI4CjHJvyfYA7+ZdXgSQNjRSA
+      pKGRApA0NFIAkoZGCkDS0EgBSBoaKQBJQyMFIGlopAAkDY0UgKShkQKQNDRSAJKGpu5sUCEE
+      1954jRMXrzBxcwjNH6a/PcjIxCztvScpJOZJZh0uDF7A0HafcSiR3AvqFsBqfAYTnULBJJvL
+      EgpEiMdXuHDlCuPRGyB89LUbrCTTtDV5Kxl81ZT/3m0iquM4WJa16zIeZft6c973UpZ6OMqx
+      2Y3/ugWwEFsklVglttzOw48+wcT1IXI+N6ZpYTsKCBPTAtWjoqpqzfTV8pdQ1d2NwOrNjz/K
+      9gcdGwBVVXedDn2UY1PmTv7rFsDFh97DRmIVzetjaiyK0hRhoCtCdGSYnv4BCsk4KxmbMz0+
+      FAUURbkt2GUF7/Yg1PLxoNofdGzq/cxRjs1u7OWEmPvMXk6I2Rk5IUYi2WekACQNjRSApKGR
+      ApA0NFIAkoZGCkDS0EgBSBoaKQBJQyMFIGlopAAkDY0UgKShkQKQNDR1Z4M6doEffu9lrjz1
+      LFO3hjAVDye7Q8zEEwTC7RQSC2RNuHDlEQLu+tJ0JZLDpu5s0OnxYbJ5QXNHM+mkhiu/yipw
+      /uwA48NDQBNdEYO0FqS92Ydt27flb9eb110ro/RBtT/o2DiOU1cK8lGOzW781z8l0hHE5qYx
+      dRd2Jo2wHVqaPczPzWMpPuzsGrFljfa+1sqO5QIZcoGM/bA/iAUy6hZA3+lzdB8/gaIb5FJJ
+      HNVD0OdiaWmZnoEe7FyaVN6h2e+q17VEcujULQAAw+UGIBAKV7a1d3QUHfoCuH37UDKJ5BCQ
+      V4EkDY0UgKShkQKQNDRSAJKGRgpA0tBIAUgaGikASUMjBSBpaKQAJA2NFICkoZECkDQ0dQsg
+      nVzhxq0oBdtmejzK9eg4wrEYGxmhYAvSyWWm5hY52EfuSiT7Q/3JcLqb/s4A0ZEZcqkNzp6/
+      wMxolHBnL8O3hhGWRSSgs5pqoiXoPoAiSyT7R90CcKkO10Znae05RVeLl+i1IXzNIbqCAVya
+      CVqQUNBFulDAtnVs2665Qkw9K33Ytl1XGY+y/UHHppxTX8+EmHq4n2KzG/91C2BpaRnD5SKf
+      S7GxkcRSddrCPt55623C7T0U1uaJzggGL3eiacURlpwQIyfE7If9fTEhpvv4SbqP3769teNY
+      8UVvR70uJZJ7hrwKJGlopAAkDY0UgKShkQKQNDRSAJKGRgpA0tBIAUgaGikASUOz442w9Moc
+      f/vyT1ANDy985EUC8kFvkgeQHQWwkVhi4PITdLf48O7p+XESyf3PjlXbsR3GR2+ysRIiFGnD
+      KwdLkgeQHau12+MhNr9QzKaTuf2SB5QdewB3IMKVwQFUzaA6cXBxfprY0hLBcC/JpSlM1cfp
+      7ibG55YIt/WQT8yTzgsGrzyE11DJFNLEU7FK9qGiKBVBaaoGKCgKKBSfWa+gQOl3ebttO+i6
+      VrEpWZfsqbJXSvY2uq5v+kNBLX+ual+U3rVtB6GI0r7vHDAFsB0bxSn/dXccYWM7W22V7a9K
+      v4QoZjw6Yne+600Prv7c9gIpu/w+DxI7CkDVDQKBAPNTE+Rs8JQsw+FmpmdmQc0RivTjyq8x
+      s5bh8sMPMT58HdUIc6bDRWI9javZR7aQZWZtGoRAsJnPLUoqqGxDUPxX/b4oVYbywSq/t2lH
+      jc87wilal98vvS7aVJWj5HOrf7bUSUHpv+q6IQTlVqFiAzX/LtsrilLZXrapti27F1VblOo3
+      tu628nnHce66YER18R3hoCjqzlVdUbaIs7wgRfU2ZVvBlKrPOU61vVL+xxZ5Vfah4DhOsSGs
+      xLzKr7Jlr5VjvPl9a/lkS0MmnPKCGuUGuPpzys4CyKeTDA8PIxQDV1X6dc6Ci4NnuDm6gGEU
+      yFp5Al6d9fUNCraBsFIkN3R87S1omkZLoJXnmn5+i+9687oty6o75/2o2h9GbGrNB6juESoi
+      FGDaJrqmb24V1SIVm/+XGhTbstB0rWpK7GZDU/q35XOWZaFrWlVzWCnQ9i2bk3lUddPHDuUu
+      v7ZtG1VTKy3ZFmuxQw/g5Nf5zvd/SnMkwlrKRq9qYISVZyK+xuDFQVKrC5h6B+3NPibGJzl7
+      7ixmapWVtC2nQx4xtre2pRdojlYaqu4OC60+QaoH1zgIISrD4Z2ouUZYcvJNZl0DxG79jFNt
+      blwnnqY7sKt93katNZpkD7Az96oH2E//90tsdiOAmu+4m7t485tfxxGwEPfw4tld7U8iOXLU
+      FICnuYt/+s/++WGXRSI5dHa8fLA4dZ3XX3uNL/3xn5IsHGaRJJLDY0cBGC4XQyOzPPv4Q9Sx
+      LKtEcqTYsWpruhvHzmHoRgPeHpE0CjsKIJ9Okkmt87M33sZ2DrNIEsnhUfs+gG3ibe3noy/4
+      0dw+AjIbVPKAUrNqm5kkb/7sNWZXsjQF/UTaOvHJ8wDJA0jNau0OtjI40IflKPT29qDJyi95
+      QNmxavsjXfS2eFhPF+S8SckDy451e31pGtOIkFyYIFPfA38lkiPDjgIId/Qj0st4W3oJVs0H
+      Xl+NM3RtiGQ6y8iNIa5HxzGzKa4PDZFI5Vmcn+bWyASOnEQjOQLUPAnOJWJ89VvfxXZAW0+T
+      KTxemRTv8oU41QeTs4vE43FOn7/C7PQM/QMDTI6NgqPT1mywnMzQ1uS944SN3U7kqHfSx1G3
+      L3/mXvvei//7KTa7sd8hF6iTX/rYh/ibb38fYbhQq+6E5VMJZlcynBs4ybkzx7n5xluIoA/D
+      MNBUAYqBSzfIOU4le2/7IgX1LnTgOE5dCykcZfvDiE09HOXYlP3fiR2v8C/PT6CHWmn1QM4B
+      X2n7wkIMB52VtVWW5+YouL2c7mjh+tWrdPSepJCYZ3Ixy+BgL5pWVI5cIEMukLEf9gexQEbN
+      +QA4JhupHI6dZ2h4iiefeHTPV4LkfAA5H2C/7A9iPkDNep1euMXoikVTuJVWPc1Kdlf7k0iO
+      HDWl4e88w/TXv87o6xp6oJ0XvYddLInkcKjdN2huXvzlXz3kokgkh8+Og6PV+TF+8uYwXT3H
+      uHDuLH6vfDio5MFjx3Nbl8eHMHNMT4zzgx/+HaZMiZY8gNROh7YKrK1nefixJ3C7dFpaWtHk
+      rBjJA0hNAVi5FDejIwgBqu7iqWefw7f7y9ISyZFhxx7AZWiMjU2iGB45I0zywFLzHMDT3MnF
+      U91kcvmigcyHljyg7Fi1hYALF86j66rsASQPLDsKwMJAVVTe/3PP0ywf8yl5QKkpgEJylp/d
+      ivHww1e4+dpPSVuHXSyJ5HCoeRKcTa4Qj83x8stxNtbibOTAX3o47tL8NAtLK4Tbj5NcnMLU
+      fJzqamJ0OkZr53EKiXnWcw6Dly7h1uXJg+T+pmY2qHBsstlccWEFRcHj9VXmBAjhsDA9Sh4X
+      juPFlU+QBM6cHWBi+DoQoDPsImOEaG/yFZ/Pvu3RcuWc7rst7FCmVkbpg2p/0LFxHKe4cs4u
+      s0GPcmx2479mD6CoGj6/v+YH5qfGUAPtHAvpRMcXMc0CbpdGNpvDdDSEnSWTs9C9LZUdy/kA
+      cj7AftgfxHyAuh95JVBYXphB1/qJBFRMvYvuSIDR8QlOnDxDYWOJ1bTNyaCnXtcSyaFTe0LM
+      PiInxMgJMftlf2gTYiSSRkEKQNLQyMfeShoOIURlzVnZA9wnCCFI/eAHrPzBH2JNz9zr4jzQ
+      bHzzW8z9q18n88qrUgCHhZPNkh8eRli1b6s76+us/dmfk33lVda/9rVDLl19mLE4ib/6CvmR
+      0XtdlD2RefX/4aTTZF55RQrgMBCOw+Lv/Bfiv/0FVv/4f9a0Ub1eXCdPgK7jPnt/L8u5+qX/
+      wfr/+QZLv//7iDoftHU/EPzwC7hOnCD4oRfkOcChIATW8jIA1tISwrIoTExgHDuG6ineL1Fc
+      Ltp+8zewk0nUSGTXrq1YDGEYGB0dB1L0Wmil8mnh3ZfzfsL/zDP4n3kGkPcB7mpvb2yQ/Mpf
+      ozU1EXrxYyiGscXeSadJ/vXXUPw+mj7+Ioph1PRvjYySfeMNAh94jvVv/F/SP/57XGcG6PjC
+      57dck68nNrmh6yz+199FUVXaf+s/4T59qvJefnSUje98D/fJExjHenEPDqKo6p7uA6j5PKCg
+      +ovPBxSmSX44iutEP+q2jIFasTTjcQpj43gfuoLq893VvowQAmwbYdlg2ziWiWNZqEIg8gWc
+      fA6RyyNyOZx8HpHPIfIFhGUhTBNhmTj5AortIGyreOJbpvT9ZQ9wF1IvvUzqpZcBUHw+Qh/+
+      0Jb30z/6MRvf+Q4A7tOn8T78UE0/nvPn8Jw/BxTH0ABWLF65GrEXrJVlsCwEYK+uApsCWPuz
+      P6cwMkLmJz8BRaHtP/4HvI8+Uvc+zKlpVr74eyiaSvtnP4PR04NiGHguDt5uLATCtnEKBUQ+
+      j5MvIDJplv7bf8deWsLz8EP4n3kakcvj5HKIXA47m0UpX5Wp/BRzzgAUTQNNq/xG01B1HcXt
+      QnF7UD0eFLcbrbkJ1d2B4nKBoaMYBoqu46gqutsNul5T9Pe1AIQQOOk0QlWhzvySO/nM/uw1
+      sm+9RfCFF3D1993R3ug7DqoKjgOWhZNKk/zqV9Gbmgh99CMYfcdRPB4Ulwu9s3NXZWj51CdJ
+      ff+HeB97z54rP4D/ySexVtdQXS68jzxc2e5ks9ilIVcZYZkI2wbTxDFNFMcp/m07CLNQrJD5
+      Umua22xNs9eu4SSTACS+/JfoXV0I09zamqJQXkpUKApaqVIqLheKrhftAWwHPdJSjJfHjep2
+      Y+s6httdjMP2H9hz7wil5DnbRqn72aD7yLsZAmXffIvlP/hDtJYWOr/w27d1tztxp27VyeWY
+      +zf/FpHJ4L44SMfnPnvXIVP26jvYq6v4n3ofG9/9Hom/+DIA7Z/7DJ6LF7FWVlB0Ha2pqe7y
+      3Fa+qtgIx0EUCsWffB5RKGDOzWMtLmL09iIKeaxMFqXc4uZyRZFmMqS+/wNwHNRQCL2zA9fx
+      4yiGgVAUFF1HqWpVFcMoVUjPZuUsidq2LDIvvYyiaYR+6R+jBQLF1lRVyb79Nuvf+Ca+9z1J
+      4Bd+HkVRan7XwtQU+eEovsffi+r1svonf4qzvk74X/4LaGq6p6kQ9SfDCYFpmrhcBtlMBstR
+      CPg9ZDJZvD4fjmVi2gKv591PI8sNDSGyWay5Oax4HNfJk+/ap6LruPr6yA8P4zqxO3/eK5cr
+      r41jx4otm8uFFo7g5PPFca3jYK9vFFva6pY0l8PKZlBMq1iRTbP4U3qNaW5eSSm1RZVRkaqi
+      uFyoLhdoGrmhIfI3boIQeC5fIvSxj6E3NWH4/Cged7Hy6gaoCp7BQfLRKMEXnkdrbYVSCnT1
+      OYAQApHJFL9PjXMXKIq35V//+m3bnVyO1f/1J9jLyxQmJwl84Lkde2lXXx+uvmJPm736Dum/
+      +1Fx+8Df4//oR3Z1DA6KugWQWFrg6sgM73/yEYaGrtPRc5z0yhyrWQdFd2NurCBQOHHuEiFv
+      7aDulsDzH8RaXERt78Dou/NQ5W4IISoVL/KpT2LOz6O3tJIfHcPKZjBN6/aTqkIBHKdYQSs/
+      AvfgBVSvr9jKaiqKqhaHSaqKYhiobndVN+9BDYbQfT4Ul1FsbQ2jUukUwyi2xCV2auXWv/U3
+      5K/fqPztPn8ez8XBHXsX3xOP43vi8TvGJPva66z80Zcwenpo/+ynUb27fwisyOVwNjYAcJ0+
+      Vfz+u8DVdxy9pxtnI1X7POKAKExNk3vnHXxPPone2lLZXrcAwu3dtC6vAipBv5u56Vki4SAD
+      ZwcYHx7C7W2lK2KQzmTxu1Rs275tQYPbFjoQYkslE6WKJgyD4K99AjubJTMyUqyc+WLLillA
+      FEotqFn127YRjoOiqMDWs35FN6BUCTEMzOVlMFxgGKheL2ogiNraVhmfKm538cAqKoqqVCq5
+      U2e+vm3biOUVUt/9Lq4zA3gffxyhKMXSCQFVN8d2WgTCTqeLLwyD5k99Eu9jj2FZVl2LUcCm
+      wBRFIfP2VUQ2S2F8nHw8jtHbW7PsNfH7af7UJykMR/E//zx26djdtTyBAG3/+XfAcVDc7rrK
+      f8cFMoTAyeWKDUvVsbFtGxyHpS/+HvbKCtm3r9Ly6d+ovF9/D7CyyGJ8kc7OLgzDj8YaPq/G
+      yHAURW/C3FhmYq7YA2iahrW8TOa114vDglJhRLmSliu7ohRbUaVYycotqqJpKG43wjDQfb7i
+      uNTjRW0Ol4YhVS1paViCpt113Ledg77MCpD42tfI/MMrZH70Y3yDg2jhcE27nXqAphc/hh4O
+      o3d24r1yuXhfQVXRQqE9p0M3ffgFnNVVXH3H8Rw/Xox7DXbyH3zqKXjqqV3bVxnUZ1/iTucA
+      G997icSXv4zn0iVa//2/K558l4SiqSqqz4e9soLq923ZX90C8PqDPPaex3C5PQS8Xnr6+3Ab
+      GtlMFo/Ph7C6KNgCr6c4/FEDAXzvfazYmmoaiqoWWz9FQdN1ULXiePcOV0P2UuHuN4zeXlBV
+      9PZ2lDqGGmVUr5fg8x8EIHfzFku/+0UUTaPls59G3+O5kd7dTeD9z5L433+FsG2aP/GrO4rg
+      fif7xpuIXJ7c1XdwMhm0UKjynqKqtH/mN8mPjN427Kq7Vrk9XtyVyV6bY/zKFErDRfXQX/V4
+      0LZdvXEcB4TY0lU96IQ+/iLe9zyK3tJSufu7V6z5eUSuOGfbjMfx7lEAib/4Sza+/W1wHFLf
+      e6l4Iy8QeFdlu1eEPv4iwjTxPvwQajB42/taOIzvvY/dtv1oN6tHCEVVcR0/vi++fO97Eise
+      R3G58F65smc/mVdfLZ53aRr+f/R+lG13aY8SnvPn8PzW5+r+nBTAEUT1emn+RHEBE2uH7NLd
+      0Pwr/4SNl14i+MEP4n/69rF8IyAF0MD4n3ka/zNP3+ti3FOO5hmPRLJPSAFIGhopAElDIwUg
+      aWikACQNjRSApKGRApA0NFIAkoam7hth6eQytybjPHL5PNEbQ5ianxOdIUYmZuk4dpJ8YoFk
+      1ubChQsYcnFhyX1O3QLQPUHcegyrsI7mbcOTTzIZX+HClSuMR2+A8NHXZrCSTNPW5K2ksFYj
+      KjOfdjcb03Gcum75H2X7w4hNPRzl2OzGf/3ZoG53cQ60omLbJjg2mqpiWhaOoyCEiWkpKB4V
+      VVVr5m/Xu9JHvQtGHGX7g44NgKqqu34sylGOTZm6V4i5E4vzU2TTWZaSFl4thxkIc6o9yHB0
+      mN7+AQrJOMtpm7M9vtLk/tuX4ykreLcHoZ4lfY66/UHHpt7PHOXY7Mb+vn4qRJn7aZGGg7aX
+      C2TsjFwgQyLZZ6QAJA2NFICkoZECkDQ0UgCShkYKQNLQSAFIGhopAElDIwUgaWikACQNjRSA
+      pKGRApA0NHt+MpxwTF75h1dpau+hw68wFV8jGO6gkJgnY8KFK48QcDfOw28lR5O9PxpRKDSF
+      /GSS66w6Xi4//BDjw0MY3nbO9RhspDJ4dd/uFsi4C/UuAnGU7Q86NtULZByE//spNrvxv/ce
+      AJtwSzfm3CyGCxbmF7AUH3Z2jdiyRltfayVt9d2mQ8PuF1E46vYHHZt606Hr9X+Q9ntJh76b
+      /z0LQFFdeN0qfefO0xzwsLi4RPfAKexcio28IOx37dW1RHJo7F0AikK4tb3yd0dpjVzdF8R9
+      dB8zL2kw5FUgSUMjBSBpaKQAJA2NFICkoZECkDQ0UgCShkYKQNLQSAFIGhopAElDs88CENy6
+      9havv/EmWbO+pxBLJPeCfRZAHsUIc+ZYJ4n19P66lkgOgH0WgEE+n2J9Yx2XSybDSe5/9lkA
+      Gqf6u7A9ESIB9/66lkgOgAN7PLoQAsdxcBynMimhPJmhnIte/l29fXue+k454OWVTrYvlrDT
+      I7HvtI+dcuR32odlWaiqWnOhBsdxbttH2c9OayVsX/SheiWUu+3DcZyKzZ1iUvZVbX+3uG8/
+      TrvZx/Zjdbd9OI5z27HaaR93mg9QK+5QnBCzfUGQ6keyH/j6ALXc17vQQfVBe9DtZWx2Zi8r
+      xNzN/96nRO6SO67OcQRXKTkM+/JnDqosB+3/frHfqefZ4u+gewCJ5H5G+/znP//5g96JVchw
+      8/oNhO4n4CueHMemhskoAVbmxphZWCbc2oJWUmomucz14TECzRFcukZsdpKJqRm8wTCz47dI
+      ZCzCTcGK/6WFaSZmFgi3FH2Mj9xgPr6C3+dhJDpMpgDNoUDRWAimxqPE1zK0RpoQjs2Na1dZ
+      SxVojTQzN3YD0x3G59rsNucmR5lbTNAaaUZRFG4Nvc1SMkNz0MPwzWGE7sXvLZ30C5uRWzdY
+      zzuEQwGcQpqr126SNQVWZo2xiWl8oTBuQ9uMzY0bCN1HwOfGKmS4dXMYDC/JpTmmF1ZpbY1Q
+      bsO2xyadXGF4ZAJ/U4jJ6DCLiTRtLeFK2fOpNa7fHMETaMLj0smlEtyKjuL2N2EoJjejk7S3
+      tVTs1xbnGRmfJtzahqYqrC0tMDY5S3NLhMnRYTZyzmYsa8RmfmqM+eV1vJrNrego6N7KMS/G
+      5ibrOYdwU4DM+gq3omMsLCfwqBbRsSlCkRYMrRh7e1tslmOzjE1MkUznySaWmJqLEW5pRVOL
+      0XHsAjevD2EqboJ+L4nlBUbGJllZz9AWCfHO0A06OjZnMS4tTB/OneDF2Wl6zgyyEp8FoJBJ
+      sry0RCKdYXUjj1fJk8xuzt6fnlvk0uApZqaK9vF4DN3lwWWtYLo7yKUSVd4dltbS9HWEWFhK
+      ADaLsSXcXj9ut5szAwOsJ1Yq1raZISfceM0UKRscJ8/ychK/309uY5W11SXWMtVPErBIZmya
+      VZNEwQFMFuOr+Hx+pkaGMVHQtM0wZlZiGJFerI1VTAcy62uksgX8fj/xpTU6wj4WV9e3xKb7
+      9CAr8TkAJkaiRZ9YJDKCrpAglijsGJvhaBRVU1EVhf5TZ8hnNrbEfmp2gQuDZ1mYLdpHo1FQ
+      VFRVYWJsnFwhV2UtiC0nOHuyi+mZOAiH6MgoqqqRjM+wmMyibjkB3RYbc53oZAxV01iMxWnr
+      7GRxMbYtNj1YqVUKDvhCLQyeP41bdzG/uMr5E53MzC9V7OPbYtPa2Ut/VwSPP0R7Tx8RjyCR
+      MSv2a7OTtJy4QGJ5AYDm1i5O93Xi8fiJzUyymsreVm8ORQDCKZ7Rl4TK+OgIuXyehfkFFEVg
+      CQWnei1XRUFVNRSKo7PLjzzOiXY/0akYiqajbDupURUVTdWKOxIqjz/9LH6xzsLKOjeHRzk9
+      cGazLKJYFk1TcASompdnn3s/8YVpxkZHyeZyxOPxGv6L9gidZz7wHBurC6RyFqfOnGV+erJi
+      6zgCTddQ1WLp/S09PPXEo8xMjaFpkMlbKFWjTiFA0zZjY1oOp8+cZW5qAkVT0TQNUb22byU2
+      xW1CdXH2RCeTU3HGR25wrP/UtugraFWxtNE4c7qP0etXmV9aJzY3TSpnVblX0TQdhA0INHeA
+      k90+RiaW6Dp2ivWlBaqbB1Upx1KAbRKIdKMXUqRtQS6dLh6X6thoWqXFBpgen+DYyT4UVUXV
+      tC0XTbbHBiGYXUzS095EbGYcJ9BBe9C11b+uoZbH/EIwM7dEb3eE8ckZ0muLLK1tNhCqoh7O
+      EMjjdTFy6ybNbT04Zo6evlN0REL4mtpwMklytqCrq6uysrxLsbgRnaS3/wS5dIqV+CzTsQR9
+      p8+zERtFcQdpjTSXvCsUMklmFpP0H+tiYyPNzNQYiYwg5Ib1dA7TEURKQyZF01lbnCUl3LT7
+      DXL5PMPDUQxvkIsXL9EWDuBrbq96qJfKRmKR1bxCT8RHJptjZGQEoXk5c6qXkeERIh3dNAWK
+      TwIwvF7mxqMoniZ8mkO+kCMaHSXQ1ILPUEims7S0d+D3FA+cd1tsWluaiUZHaOk6jm5uEEua
+      nDzeWTmom7E5SS6doslnMDodo7uzmdmFVUzLor01shl7XXDj1hidx/opZNNEQl5GJmboPXmG
+      C2dP4fP5tsTSKaQYnYpx4mQfqVQOr2YxFUty/uJ5FmfGcAWaaQ03lYZkpdjkFHoifjKOB3tj
+      gYyj0xUJsrKWJNjcQnPIX4qNj7nxKJRig8tNNmfRGg5BIcPodJz+/j5culaKjXtLbHRN4Khu
+      Qj6DsYlJTNMk2BTB0IsNoifgZ/zGEP5IJ4pTQHfpFCwIN4U41tePz+ejq71tS72RJ8GShkZm
+      g0oaGikASUMjBSBpaA78TrBEsl+M3HibpaTFxfPHWElpnOhtvaP9tTdeZT1nMzD4EPPRt+k+
+      McDIyDQ9rW76z1wCpAAkR4ifvvo6v/wrv0ZhdYToBMTGhxC+MF0BlfG5Zc6e6iu741YAAADX
+      SURBVObaWIxQKMxTj13m5sgkL/7iL5JfX+E7P/wJ75mNMq2cpMWd5tbV11i13HIIJDkqCF78
+      yAv87de/QmzdJBMf5bXoPKlEgu//6MeoIkdsZgZXpJ+FyWEA7FyKd955B9vTzKnTpzh38hhn
+      L14itxbn2vAk73v0suwBJEcFh+jwKKFIO81NzfSdDeKeHKalrY324CXWCiohn81rQ68zeGYA
+      gK6uTgqFAqbl0N3VhSfkJ+IxcLd2MxAUvPrmkLwPIHlwSC9OMVcIcqY3cnfjElIAkobm/wMf
+      HYPuSgMtJwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
